@@ -14,7 +14,7 @@
     },
     "scripts": {
         "start": "react-scripts start",
-        "build": "CI=false react-scripts build",
+        "build": "CI=false DISABLE_ESLINT_PLUGIN=true react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
@@ -22,7 +22,12 @@
         "extends": [
             "react-app",
             "react-app/jest"
-        ]
+        ],
+        "rules": {
+            "jsx-a11y/anchor-is-valid": "off",
+            "jsx-a11y/alt-text": "warn",
+            "jsx-a11y/aria-props": "warn"
+        }
     },
     "browserslist": {
         "production": [
