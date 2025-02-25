@@ -1,13 +1,61 @@
+@import url('https://api.fontshare.com/v2/css?f[]=clash-grotesk@200,300,400,500,600,700&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url('../public/back.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Clash Grotesk', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Add these styles for the main title */
+.main-title {
+    font-size: 2.5rem;
+    text-align: left;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    color: #0d208f;
+    font-weight: 600; /* Semi-bold for the main text */
+}
+
+.main-title span {
+    font-weight: 200; /* Thinner weight for 'THE' */
+}
+
+.hero-section {
+    width: 45%;
+    margin-left: 1rem;
+    padding-right: 2rem;
+    min-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-text p {
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 400; /* Regular weight for paragraph text */
+}
+
+.who-we-are-section {
+    padding-top: 4rem;
+    width: 45%;
+    margin-left: 1rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #ff8609;
+    font-weight: 600;
+    margin-bottom: 2rem;
 }
