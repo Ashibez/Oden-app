@@ -323,8 +323,7 @@ body {
     font-weight: 600;
 }
 
-.footer-column a,
-.footer-column Link {
+.footer-column a {
     display: block;
     color: white;
     text-decoration: none;
@@ -334,8 +333,11 @@ body {
     transition: opacity 0.3s ease;
 }
 
-.footer-column a:hover,
-.footer-column Link:hover {
+.footer-column Link {
+    display: none;
+}
+
+.footer-column a:hover {
     opacity: 1;
 }
 
@@ -369,4 +371,8 @@ body {
     .footer-left {
         max-width: 100%;
     }
+}
+
+[aria-hidden='true'] {
+    pointer-events: none;
 }

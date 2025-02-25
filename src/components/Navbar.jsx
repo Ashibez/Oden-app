@@ -9,8 +9,8 @@ function Navbar() {
         <header className={styles.header}>
             <nav className={styles.nav}>
                 <div className={styles.logo}>
-                    <Link to="/">
-                        <img src="/logo.png" alt="Oden Ewa Foundation Logo" />
+                    <Link to="/" aria-label="Home">
+                        <img src="/logo.png" alt="" aria-hidden="true" />
                     </Link>
                 </div>
                 <ul className={styles.navLinks}>
@@ -26,11 +26,7 @@ function Navbar() {
                         <Link to="/about">About Us</Link>
                     </li>
                     <li className={styles.navImage}>
-                        <img
-                            src="/image2.png"
-                            alt="Decorative background"
-                            aria-hidden="true"
-                        />
+                        <img src="/image2.png" alt="" aria-hidden="true" />
                     </li>
                 </ul>
             </nav>
