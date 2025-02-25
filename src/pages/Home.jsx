@@ -122,7 +122,10 @@ function Home() {
                             </p>
                         </div>
                         <div className={styles['button-container']}>
-                            <button className={styles['apply-button']}>
+                            <Link
+                                to="/apply"
+                                className={styles['apply-button']}
+                            >
                                 Apply Now
                                 <img
                                     src="/arrow.png"
@@ -130,7 +133,7 @@ function Home() {
                                     className={styles['button-arrow']}
                                     aria-hidden="true"
                                 />
-                            </button>
+                            </Link>
                         </div>
                     </div>
                     <div className={styles['initiative-image']}>

@@ -1,16 +1,21 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
 function Navbar() {
+    const location = useLocation();
+    const isHome = location.pathname === '/';
+
     return (
         <header className={styles.header}>
             <nav className={styles.nav}>
                 <div className={styles.logo}>
-                    <img src="/logo.png" alt="Logo" />
+                    <Link to="/">
+                        <img src="/logo.png" alt="Logo" />
+                    </Link>
                 </div>
                 <ul className={styles.navLinks}>
                     <li>
-                        <Link to="/" className={styles.active}>
+                        <Link to="/" className={isHome ? styles.active : ''}>
                             Home
                         </Link>
                     </li>
