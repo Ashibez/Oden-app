@@ -1,4 +1,5 @@
 import styles from './Home.module.css';
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
@@ -159,18 +160,18 @@ function Home() {
                     <div className={styles['footer-links']}>
                         <div className={styles['footer-column']}>
                             <h3>About Us</h3>
-                            <a href="#">Who We Are</a>
+                            <Link to="/about">Who We Are</Link>
                         </div>
                         <div className={styles['footer-column']}>
                             <h3>Our Programs</h3>
-                            <a href="#">Ugep Scholarships</a>
+                            <Link to="/programs">Ugep Scholarships</Link>
                         </div>
                         <div className={styles['footer-column']}>
                             <h3>Support</h3>
                             <div className={styles['support-links']}>
-                                <a href="#">Join Our Team</a>
-                                <a href="#">Become a Volunteer</a>
-                                <a href="#">Donate</a>
+                                <Link to="/careers">Join Our Team</Link>
+                                <Link to="/volunteer">Become a Volunteer</Link>
+                                <Link to="/donate">Donate</Link>
                             </div>
                         </div>
                     </div>

@@ -322,7 +322,8 @@ body {
     font-weight: 600;
 }
 
-.footer-column a {
+.footer-column a,
+.footer-column Link {
     display: block;
     color: white;
     text-decoration: none;
@@ -332,7 +333,8 @@ body {
     transition: opacity 0.3s ease;
 }
 
-.footer-column a:hover {
+.footer-column a:hover,
+.footer-column Link:hover {
     opacity: 1;
 }
 

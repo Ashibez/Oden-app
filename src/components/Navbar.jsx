@@ -10,9 +10,9 @@ function Navbar() {
                 </div>
                 <ul className={styles.navLinks}>
                     <li>
-                        <a href="#" className={styles.active}>
+                        <Link to="/" className={styles.active}>
                             Home
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <Link to="/programs">Our Programs</Link>
