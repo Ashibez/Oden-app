@@ -39,7 +39,7 @@ function Home() {
             <div className={styles['who-we-are-section']}>
                 <img
                     src="/frame-28.png"
-                    alt=""
+                    alt="Decorative frame"
                     className={styles['decorative-frame']}
                     aria-hidden="true"
                 />
@@ -125,6 +125,7 @@ function Home() {
                             <Link
                                 to="/apply"
                                 className={styles['apply-button']}
+                                aria-label="Apply for scholarship"
                             >
                                 Apply Now
                                 <img
@@ -147,7 +148,7 @@ function Home() {
                     <div className={styles['footer-left']}>
                         <img
                             src="/foot-logo.png"
-                            alt="Footer Logo"
+                            alt="Oden Ewa Foundation"
                             className={styles['footer-logo']}
                         />
                         <p className={styles['footer-text']}>
