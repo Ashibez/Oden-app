@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
 import styles from './Careers.module.css';
+import footerStyles from './Home.module.css';
+import { Link } from 'react-router-dom';
 
 function Careers() {
     return (
@@ -8,12 +9,17 @@ function Careers() {
                 <h1>Join Our Team</h1>
                 <p>Build a Career with Purpose</p>
             </div>
-            <div className={styles.container}>
-                {/* Careers content */}
-                <Link to="/" className={styles.homeButton}>
-                    Back to Home
-                </Link>
-            </div>
+
+            <section className={styles.content}>
+                <div className={styles.container}>
+                    <h2>Career Opportunities</h2>
+                    <p>Coming Soon...</p>
+                </div>
+            </section>
+
+            <footer className={footerStyles.footer}>
+                {/* Same footer content as other pages */}
+            </footer>
         </div>
     );
 }

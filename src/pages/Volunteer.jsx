@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
 import styles from './Volunteer.module.css';
+import footerStyles from './Home.module.css';
+import { Link } from 'react-router-dom';
 
 function Volunteer() {
     return (
@@ -8,12 +9,17 @@ function Volunteer() {
                 <h1>Volunteer With Us</h1>
                 <p>Make a Difference in Your Community</p>
             </div>
-            <div className={styles.container}>
-                {/* Volunteer content */}
-                <Link to="/" className={styles.homeButton}>
-                    Back to Home
-                </Link>
-            </div>
+
+            <section className={styles.content}>
+                <div className={styles.container}>
+                    <h2>Volunteer Opportunities</h2>
+                    <p>Coming Soon...</p>
+                </div>
+            </section>
+
+            <footer className={footerStyles.footer}>
+                {/* Same footer content as other pages */}
+            </footer>
         </div>
     );
 }

@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
 import styles from './Apply.module.css';
+import footerStyles from './Home.module.css';
+import { Link } from 'react-router-dom';
 
 function Apply() {
     return (
@@ -8,12 +9,20 @@ function Apply() {
                 <h1>Apply for Scholarship</h1>
                 <p>Take the First Step Towards Your Future</p>
             </div>
-            <div className={styles.container}>
-                {/* Application form will go here */}
-                <Link to="/programs" className={styles.backButton}>
-                    Back to Programs
-                </Link>
-            </div>
+
+            <section className={styles.content}>
+                <div className={styles.container}>
+                    <h2>Application Process</h2>
+                    <p>Coming Soon...</p>
+                    <Link to="/programs" className={styles.backButton}>
+                        Back to Programs
+                    </Link>
+                </div>
+            </section>
+
+            <footer className={footerStyles.footer}>
+                {/* Same footer content as other pages */}
+            </footer>
         </div>
     );
 }

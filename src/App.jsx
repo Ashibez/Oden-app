@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    Navigate
+} from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -21,6 +26,8 @@ function App() {
                     <Route path="careers" element={<Careers />} />
                     <Route path="volunteer" element={<Volunteer />} />
                     <Route path="donate" element={<Donate />} />
+                    {/* Catch all route - redirect to home */}
+                    <Route path="*" element={<Navigate to="/" replace />} />
                 </Route>
             </Routes>
         </Router>
