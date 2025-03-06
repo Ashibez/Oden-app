@@ -210,6 +210,7 @@ body {
         margin: 0;
         padding: 4rem 1rem;
         overflow: hidden;
+        text-align: center;
     }
 
     .initiative-content {
