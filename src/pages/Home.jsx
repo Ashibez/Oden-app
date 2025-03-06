@@ -123,7 +123,7 @@ function Home() {
                         </div>
                         <div className={styles['button-container']}>
                             <Link
-                                to="#"
+                                to="https://www.odenewafoundation.org/userRegistration"
                                 className={styles['apply-button']}
                                 aria-label="Apply for scholarship"
                             >
