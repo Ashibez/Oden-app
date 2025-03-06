@@ -234,47 +234,37 @@ body {
     }
 
     .footer-content {
-        padding: 0 1rem 3rem;
-        flex-direction: column;
-        gap: 3rem;
-    }
-
-    .logo img {
-        height: 40px !important;
-    }
-
-    .initiative-subtitle {
-        padding: 0 1.5rem;
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
-        text-align: center;
-    }
-
-    .initiative-text-content {
-        padding: 0 1.5rem;
-    }
-
-    .initiative-content {
-        flex-direction: column;
-        gap: 2rem;
-        padding: 0;
-    }
-
-    .initiative-image {
-        min-height: auto;
-    }
-
-    .footer {
-        text-align: center;
-    }
-
-    .footer-content {
-        padding: 0 1rem 3rem;
+        padding: 0 1rem 1rem;
         flex-direction: column;
         gap: 3rem;
         align-items: center;
         justify-content: center;
         text-align: center;
+        position: relative;
+        min-height: 300px;
+    }
+
+    .footer-left {
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-copyright {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 0;
+    }
+
+    .footer-text {
+        margin-bottom: 0;
     }
 
     .footer-links {
@@ -292,20 +282,6 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-
-    .footer-left {
-        max-width: 100%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .footer-text {
-        text-align: center;
-        width: 100%;
     }
 
     .footer-column a {
@@ -576,12 +552,14 @@ body {
     }
 
     .footer-content {
-        padding: 0 1rem 3rem;
+        padding: 0 1rem 1rem;
         flex-direction: column;
         gap: 3rem;
         align-items: center;
         justify-content: center;
         text-align: center;
+        position: relative;
+        min-height: 300px;
     }
 
     .footer-links {
@@ -611,8 +589,7 @@ body {
     }
 
     .footer-text {
-        text-align: center;
-        width: 100%;
+        margin-bottom: 0;
     }
 
     .footer-column a {
