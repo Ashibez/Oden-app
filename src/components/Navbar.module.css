@@ -92,24 +92,54 @@
     border: none;
     cursor: pointer;
     padding: 0.5rem;
+    position: relative;
+    z-index: 1000;
+}
+
+.menuButton span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.3s;
 }
 
 @media (max-width: 768px) {
-    .menuButton {
-        display: block;
-        margin-top: 2rem;
+    .nav {
+        justify-content: flex-start;
+        padding: 0.5rem;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .logo img {
+        height: 40px;
     }
 
     .navLinks {
-        display: none;
-        width: 100%;
-        background: white;
-        flex-direction: column;
-        padding: 1rem;
-        gap: 1rem;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        padding-top: 0;
     }
 
-    .navLinks.open {
-        display: flex;
+    .navLinks a {
+        font-size: 0.85rem;
+        padding: 0.25rem 0;
+    }
+
+    .navImage {
+        display: none;
+    }
+
+    .menuButton {
+        display: none;
     }
 }

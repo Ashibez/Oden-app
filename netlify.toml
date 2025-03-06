@@ -10,4 +10,7 @@
 [build.environment]
   CI = "false"
   DISABLE_ESLINT_PLUGIN = "true"
-  NODE_ENV = "production" 
+  NODE_ENV = "production"
+
+[context.production]
+  branch = "main" 
