@@ -6,7 +6,7 @@ function Home() {
         <div className={styles.container}>
             <div className={styles.heroSection}>
                 <h1 className={styles.mainTitle}>
-                    <span>THE</span> ODEN EWA
+                    <span className={styles.thin}>THE</span> ODEN EWA
                     <br />
                     FOUNDATION
                 </h1>

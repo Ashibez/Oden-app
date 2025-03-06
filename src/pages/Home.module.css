@@ -32,9 +32,19 @@ body {
 .mainTitle {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: #333;
+    color: #0d208f;
     text-align: left;
     max-width: 800px;
+    font-weight: 600;
+}
+
+.mainTitle .thin {
+    font-weight: 300;
+    color: #0d208f;
+}
+
+.mainTitle span {
+    color: #0d208f;
 }
 
 .heroText {
@@ -232,6 +242,22 @@ body {
     .logo img {
         height: 40px !important;
     }
+
+    .initiative-subtitle {
+        padding: 0 1.5rem;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .initiative-text-content {
+        padding: 0 1.5rem;
+    }
+
+    .initiative-content {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0;
+    }
 }
 
 .initiative-title {
@@ -355,18 +381,18 @@ body {
 
 .initiative-image {
     flex: 1;
-    max-width: 48%;
+    max-width: 45%;
     display: flex;
     align-items: flex-start;
     padding-top: 2rem;
 }
 
 .initiative-image img {
-    width: 100%;
+    width: 90%;
     height: auto;
     border-radius: 0;
     object-fit: cover;
-    max-height: 450px;
+    max-height: 400px;
 }
 
 @media (max-width: 768px) {
@@ -379,6 +405,14 @@ body {
     .initiative-text,
     .initiative-image {
         max-width: 100%;
+    }
+
+    .initiative-image {
+        max-width: 100%;
+    }
+
+    .initiative-image img {
+        width: 100%;
     }
 }
 
