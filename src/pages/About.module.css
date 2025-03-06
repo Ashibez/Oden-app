@@ -187,11 +187,13 @@
 
 @media (max-width: 768px) {
     .hero {
-        padding: 6rem 1.5rem 4rem;
+        padding: 6rem 1rem 4rem;
+        overflow: hidden;
     }
 
     .container {
-        padding: 4rem 1.5rem;
+        padding: 4rem 1rem;
+        overflow: hidden;
     }
 
     .stats,
@@ -205,8 +207,15 @@
     }
 
     .ctaButton {
-        display: block;
-        width: 100%;
-        text-align: center;
+        width: auto;
+        min-width: 200px;
+        max-width: 90%;
+        margin: 0.5rem auto;
+    }
+
+    .approachContent {
+        width: 95%;
+        margin: 0 auto;
+        overflow: hidden;
     }
 }
