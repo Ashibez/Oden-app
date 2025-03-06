@@ -10,9 +10,10 @@ body {
     margin: 0 auto;
     padding: 1rem;
     position: relative;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+}
+
+.hero-section {
+    margin-top: 2rem; /* Add space after navbar */
 }
 
 .who-we-are-section {

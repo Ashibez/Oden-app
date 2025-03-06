@@ -1,10 +1,131 @@
+import styles from './About.module.css';
+import { Link } from 'react-router-dom';
+
 function About() {
-  return (
-    <div className="container">
-      <h1>About Us</h1>
-      {/* Add your about page content here */}
-    </div>
-  );
+    return (
+        <div className={styles.about}>
+            <div className={styles.hero}>
+                <h1>About Us</h1>
+                <p>Building a Future of Opportunity and Innovation</p>
+            </div>
+
+            <section className={styles.mission}>
+                <div className={styles.container}>
+                    <h2>Our Mission</h2>
+                    <p className={styles.missionText}>
+                        The Oden Ewa Foundation is committed to transforming
+                        lives through education and opportunity. We focus on
+                        creating sustainable pathways for young people in Africa
+                        and Indigenous communities in Canada, enabling them to
+                        access quality education and build fulfilling careers.
+                    </p>
+
+                    <div className={styles.stats}>
+                        <div className={styles.stat}>
+                            <h3>1000+</h3>
+                            <p>Students Supported</p>
+                        </div>
+                        <div className={styles.stat}>
+                            <h3>25+</h3>
+                            <p>Partner Institutions</p>
+                        </div>
+                        <div className={styles.stat}>
+                            <h3>50+</h3>
+                            <p>Community Programs</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className={styles.impact}>
+                <div className={styles.container}>
+                    <h2>Our Impact</h2>
+                    <div className={styles.impactGrid}>
+                        <div className={styles.impactCard}>
+                            <h3>Education Access</h3>
+                            <p>
+                                Providing scholarships and educational support
+                                to talented students who face financial
+                                barriers, enabling them to pursue their academic
+                                dreams.
+                            </p>
+                        </div>
+                        <div className={styles.impactCard}>
+                            <h3>Skills Development</h3>
+                            <p>
+                                Offering practical training and mentorship
+                                programs that equip young people with the skills
+                                needed in today's dynamic job market.
+                            </p>
+                        </div>
+                        <div className={styles.impactCard}>
+                            <h3>Community Building</h3>
+                            <p>
+                                Creating networks and partnerships that
+                                strengthen communities and create sustainable
+                                opportunities for growth and development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className={styles.approach}>
+                <div className={styles.container}>
+                    <h2>Our Approach</h2>
+                    <div className={styles.approachContent}>
+                        <div className={styles.approachText}>
+                            <h3>Holistic Support</h3>
+                            <p>
+                                We believe in providing comprehensive support
+                                that goes beyond financial assistance. Our
+                                programs include mentorship, career guidance,
+                                and personal development opportunities.
+                            </p>
+                            <h3>Sustainable Impact</h3>
+                            <p>
+                                Our initiatives are designed to create lasting
+                                change by empowering individuals and communities
+                                to build their own pathways to success.
+                            </p>
+                            <h3>Collaborative Partnerships</h3>
+                            <p>
+                                We work closely with educational institutions,
+                                businesses, and community organizations to
+                                create effective and sustainable programs.
+                            </p>
+                        </div>
+                        <div className={styles.approachImage}>
+                            <img
+                                src="/boy g.png"
+                                alt="Students collaborating in a learning environment"
+                                className={styles.image}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className={styles.join}>
+                <div className={styles.container}>
+                    <h2>Join Our Mission</h2>
+                    <p>
+                        Together, we can create meaningful change and build a
+                        future where every young person has the opportunity to
+                        reach their full potential.
+                    </p>
+                    <div className={styles.cta}>
+                        <Link to="/volunteer" className={styles.ctaButton}>
+                            Become a Volunteer
+                        </Link>
+                        <Link to="/donate" className={styles.ctaButton}>
+                            Support Our Cause
+                        </Link>
+                    </div>
+                </div>
+            </section>
+        </div>
+    );
 }
 
-export default About; 
+export default About;

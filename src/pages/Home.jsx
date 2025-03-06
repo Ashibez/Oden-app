@@ -2,15 +2,15 @@ import styles from './Home.module.css';
 import { Link } from 'react-router-dom';
 
 function Home() {
-    return (
+  return (
         <div className={styles.container}>
-            <div className="hero-section">
-                <h1 className="main-title">
+      <div className="hero-section">
+        <h1 className="main-title">
                     <span>THE</span> ODEN EWA
                     <br />
                     FOUNDATION
-                </h1>
-                <div className="hero-text">
+        </h1>
+        <div className="hero-text">
                     <p>
                         The Oden Ewa Foundation works with visionary
                         organizations to enable young people in Africa and in
@@ -140,9 +140,9 @@ function Home() {
                     <div className={styles['initiative-image']}>
                         <img src="/schola.png" alt="Scholarship Program" />
                     </div>
-                </div>
-            </div>
-
+        </div>
+      </div>
+      
             <footer className={styles.footer}>
                 <div className={styles['footer-content']}>
                     <div className={styles['footer-left']}>
@@ -200,11 +200,11 @@ function Home() {
                                 </Link>
                             </div>
                         </div>
-                    </div>
+      </div>
                 </div>
             </footer>
-        </div>
-    );
+    </div>
+  );
 }
 
-export default Home;
+export default Home; 

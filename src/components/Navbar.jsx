@@ -4,6 +4,8 @@ import styles from './Navbar.module.css';
 function Navbar() {
     const location = useLocation();
     const isHome = location.pathname === '/';
+    const isAbout = location.pathname === '/about';
+    const isPrograms = location.pathname === '/programs';
 
     return (
         <header className={styles.header}>
@@ -20,14 +22,26 @@ function Navbar() {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/programs">Our Programs</Link>
+                        <Link
+                            to="/programs"
+                            className={isPrograms ? styles.active : ''}
+                        >
+                            Our Programs
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/about">About Us</Link>
+                        <Link
+                            to="/about"
+                            className={isAbout ? styles.active : ''}
+                        >
+                            About Us
+                        </Link>
                     </li>
-                    <li className={styles.navImage}>
-                        <img src="/image2.png" alt="" aria-hidden="true" />
-                    </li>
+                    {isHome && (
+                        <li className={styles.navImage}>
+                            <img src="/image2.png" alt="" aria-hidden="true" />
+                        </li>
+                    )}
                 </ul>
             </nav>
         </header>
