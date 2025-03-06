@@ -1,11 +1,12 @@
 import styles from './About.module.css';
+import footerStyles from '../pages/Home.module.css'; // Import footer styles
 import { Link } from 'react-router-dom';
 
 function About() {
-  return (
+    return (
         <div className={styles.about}>
             <div className={styles.hero}>
-      <h1>About Us</h1>
+                <h1>About Us</h1>
                 <p>Building a Future of Opportunity and Innovation</p>
             </div>
 
@@ -124,8 +125,69 @@ function About() {
                     </div>
                 </div>
             </section>
-    </div>
-  );
+
+            <footer className={footerStyles.footer}>
+                <div className={footerStyles['footer-content']}>
+                    <div className={footerStyles['footer-left']}>
+                        <img
+                            src="/foot-logo.png"
+                            alt="Oden Ewa Foundation"
+                            className={footerStyles['footer-logo']}
+                        />
+                        <p className={footerStyles['footer-text']}>
+                            The Oden Ewa Foundation works with visionary
+                            organizations to enable young people in Africa and
+                            in Indigenous communities in Canada to access
+                            dignified and fulfilling work.
+                        </p>
+                        <p className={footerStyles['footer-copyright']}>
+                            © 2025 OdenEwa. All rights reserved.
+                        </p>
+                    </div>
+                    <div className={footerStyles['footer-links']}>
+                        <div className={footerStyles['footer-column']}>
+                            <h3>About Us</h3>
+                            <Link
+                                to="/about"
+                                aria-label="Learn more about who we are"
+                            >
+                                Who We Are
+                            </Link>
+                        </div>
+                        <div className={footerStyles['footer-column']}>
+                            <h3>Our Programs</h3>
+                            <Link
+                                to="/programs"
+                                aria-label="Learn about Ugep Scholarships"
+                            >
+                                Ugep Scholarships
+                            </Link>
+                        </div>
+                        <div className={footerStyles['footer-column']}>
+                            <h3>Support</h3>
+                            <div className={footerStyles['support-links']}>
+                                <Link
+                                    to="/careers"
+                                    aria-label="View career opportunities"
+                                >
+                                    Join Our Team
+                                </Link>
+                                <Link
+                                    to="/volunteer"
+                                    aria-label="Learn about volunteer opportunities"
+                                >
+                                    Become a Volunteer
+                                </Link>
+                                <Link to="/donate" aria-label="Make a donation">
+                                    Donate
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    );
 }
 
-export default About; 
+export default About;
