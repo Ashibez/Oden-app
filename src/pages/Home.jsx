@@ -147,7 +147,7 @@ function Home() {
                 <div className={styles['footer-content']}>
                     <div className={styles['footer-left']}>
                         <img
-                            src="/foot-logo.png"
+                            src="/favi2.png"
                             alt="Oden Ewa Foundation"
                             className={styles['footer-logo']}
                         />
