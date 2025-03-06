@@ -21,7 +21,7 @@ function Programs() {
                                 Polytechnic Ugep with comprehensive
                                 scholarships.
                             </p>
-                            <Link to="/apply" className={styles.learnMore}>
+                            <Link to="#" className={styles.learnMore}>
                                 Learn More
                             </Link>
                         </div>

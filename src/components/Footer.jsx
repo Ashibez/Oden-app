@@ -24,40 +24,18 @@ function Footer() {
                 <div className={styles['footer-links']}>
                     <div className={styles['footer-column']}>
                         <h3>About Us</h3>
-                        <Link
-                            to="/about"
-                            aria-label="Learn more about who we are"
-                        >
-                            Who We Are
-                        </Link>
+                        <Link to="/about">Who We Are</Link>
                     </div>
                     <div className={styles['footer-column']}>
                         <h3>Our Programs</h3>
-                        <Link
-                            to="/programs"
-                            aria-label="Learn about Ugep Scholarships"
-                        >
-                            Ugep Scholarships
-                        </Link>
+                        <Link to="/programs">Ugep Scholarships</Link>
                     </div>
                     <div className={styles['footer-column']}>
                         <h3>Support</h3>
                         <div className={styles['support-links']}>
-                            <Link
-                                to="/careers"
-                                aria-label="View career opportunities"
-                            >
-                                Join Our Team
-                            </Link>
-                            <Link
-                                to="/volunteer"
-                                aria-label="Learn about volunteer opportunities"
-                            >
-                                Become a Volunteer
-                            </Link>
-                            <Link to="/donate" aria-label="Make a donation">
-                                Donate
-                            </Link>
+                            <Link to="#">Join Our Team</Link>
+                            <Link to="#">Become a Volunteer</Link>
+                            <Link to="#">Donate</Link>
                         </div>
                     </div>
                 </div>

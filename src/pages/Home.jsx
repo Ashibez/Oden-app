@@ -123,7 +123,7 @@ function Home() {
                         </div>
                         <div className={styles['button-container']}>
                             <Link
-                                to="/apply"
+                                to="#"
                                 className={styles['apply-button']}
                                 aria-label="Apply for scholarship"
                             >
@@ -183,21 +183,9 @@ function Home() {
                         <div className={styles['footer-column']}>
                             <h3>Support</h3>
                             <div className={styles['support-links']}>
-                                <Link
-                                    to="/careers"
-                                    aria-label="View career opportunities"
-                                >
-                                    Join Our Team
-                                </Link>
-                                <Link
-                                    to="/volunteer"
-                                    aria-label="Learn about volunteer opportunities"
-                                >
-                                    Become a Volunteer
-                                </Link>
-                                <Link to="/donate" aria-label="Make a donation">
-                                    Donate
-                                </Link>
+                                <Link to="#">Join Our Team</Link>
+                                <Link to="#">Become a Volunteer</Link>
+                                <Link to="#">Donate</Link>
                             </div>
                         </div>
                     </div>
