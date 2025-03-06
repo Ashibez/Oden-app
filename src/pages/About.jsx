@@ -3,10 +3,10 @@ import footerStyles from '../pages/Home.module.css'; // Import footer styles
 import { Link } from 'react-router-dom';
 
 function About() {
-  return (
+    return (
         <div className={styles.about}>
             <div className={styles.hero}>
-      <h1>About Us</h1>
+                <h1>About Us</h1>
                 <p>Building a Future of Opportunity and Innovation</p>
             </div>
 
@@ -130,7 +130,7 @@ function About() {
                 <div className={footerStyles['footer-content']}>
                     <div className={footerStyles['footer-left']}>
                         <img
-                            src="/foot-logo.png"
+                            src="/favi2.png"
                             alt="Oden Ewa Foundation"
                             className={footerStyles['footer-logo']}
                         />
@@ -186,8 +186,8 @@ function About() {
                     </div>
                 </div>
             </footer>
-    </div>
-  );
+        </div>
+    );
 }
 
-export default About; 
+export default About;

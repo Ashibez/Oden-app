@@ -3,10 +3,10 @@ import footerStyles from '../pages/Home.module.css'; // Import footer styles
 import { Link } from 'react-router-dom';
 
 function Programs() {
-  return (
+    return (
         <div className={styles.programs}>
             <div className={styles.hero}>
-      <h1>Our Programs</h1>
+                <h1>Our Programs</h1>
                 <p>Empowering Through Education and Skills Development</p>
             </div>
 
@@ -33,7 +33,7 @@ function Programs() {
                 <div className={footerStyles['footer-content']}>
                     <div className={footerStyles['footer-left']}>
                         <img
-                            src="/foot-logo.png"
+                            src="/favi2.png"
                             alt="Oden Ewa Foundation"
                             className={footerStyles['footer-logo']}
                         />
@@ -89,8 +89,8 @@ function Programs() {
                     </div>
                 </div>
             </footer>
-    </div>
-  );
+        </div>
+    );
 }
 
-export default Programs; 
+export default Programs;
