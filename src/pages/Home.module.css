@@ -725,7 +725,6 @@ body {
         flex-direction: column;
         gap: 2rem;
         padding: 0 1rem;
-        text-align: center;
     }
 
     .health-insurance-text,
@@ -740,7 +739,8 @@ body {
     .health-insurance-image img {
         width: 100%;
     }
-    .health-insurance-section {
+
+    .health-insurance-subtitle {
         text-align: center;
     }
 }
