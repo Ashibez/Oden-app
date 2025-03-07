@@ -75,6 +75,64 @@ function Home() {
                 </div>
             </div>
 
+            <div className={styles['health-insurance-section']}>
+                <p className={styles['health-insurance-subtitle']}>
+                    <span className={styles['thin-bold']}>The</span>{' '}
+                    <span className={styles.highlight}>
+                        Oden Ewa Foundation Health Insurance Scheme
+                    </span>
+                </p>
+
+                <div className={styles['health-insurance-content']}>
+                    <div className={styles['health-insurance-text']}>
+                        <div
+                            className={styles['health-insurance-text-content']}
+                        >
+                            <p>
+                                <span className={styles.highlight}>
+                                    Affordable Healthcare for All!
+                                </span>
+                            </p>
+                            <p>
+                                Join the Oden Ewa Foundation Health Insurance
+                                Scheme and enjoy quality medical care at low
+                                costs!
+                            </p>
+                            <p>
+                                ✅ Hospital coverage <br />
+                                ✅ Medications <br />✅ Emergency care – all
+                                tailored to keep you and your loved ones
+                                healthy.
+                            </p>
+                            <p>
+                                Oden Ewa Foundation –{' '}
+                                <span className={styles.highlight}>
+                                    Your Health, Our Priority!
+                                </span>
+                            </p>
+                        </div>
+                        <div className={styles['button-container']}>
+                            <Link
+                                to="https://www.odenewafoundation.org/userRegistration"
+                                className={styles['apply-button']}
+                                aria-label="Apply for Health Insurance"
+                            >
+                                Apply Now
+                                <img
+                                    src="/arrow.png"
+                                    alt=""
+                                    className={styles['button-arrow']}
+                                    aria-hidden="true"
+                                />
+                            </Link>
+                        </div>
+                    </div>
+                    <div className={styles['health-insurance-image']}>
+                        <img src="/newsec1.JPG" alt="Health Insurance Scheme" />
+                    </div>
+                </div>
+            </div>
+
             <h2
                 className={`${styles['section-title']} ${styles['initiative-title']}`}
             >

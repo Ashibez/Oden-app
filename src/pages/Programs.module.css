@@ -107,3 +107,142 @@
         grid-template-columns: 1fr;
     }
 }
+.health-insurance-section {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 4rem 0;
+    background-color: #fff6ec;
+    width: 100vw;
+    margin-bottom: 0;
+}
+
+.health-insurance-subtitle {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+.health-insurance-subtitle .highlight {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.health-insurance-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 8rem;
+}
+
+.health-insurance-text {
+    flex: 1;
+    max-width: 42%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    justify-content: flex-start;
+}
+
+.health-insurance-text-content {
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 1rem;
+}
+
+.health-insurance-text p {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.health-insurance-text .highlight {
+    font-weight: 700;
+}
+
+.button-container {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.apply-button {
+    background-color: #0485e9;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+.button-arrow {
+    width: 20px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.apply-button:hover .button-arrow {
+    transform: translateX(5px);
+}
+
+.health-insurance-image {
+    flex: 1;
+    max-width: 45%;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 2rem;
+    min-height: 500px;
+}
+
+.health-insurance-image img {
+    width: 90%;
+    height: 100%;
+    border-radius: 0;
+    object-fit: cover;
+    max-height: 500px;
+}
+
+@media (max-width: 768px) {
+    .health-insurance-content {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .health-insurance-text,
+    .health-insurance-image {
+        max-width: 100%;
+    }
+
+    .health-insurance-image {
+        max-width: 100%;
+    }
+
+    .health-insurance-image img {
+        width: 100%;
+    }
+    .health-insurance-section {
+        text-align: center;
+    }
+}
