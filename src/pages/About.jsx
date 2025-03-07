@@ -129,11 +129,14 @@ function About() {
             <footer className={footerStyles.footer}>
                 <div className={footerStyles['footer-content']}>
                     <div className={footerStyles['footer-left']}>
-                        <img
-                            src="/favi2.png"
-                            alt="Oden Ewa Foundation"
-                            className={footerStyles['footer-logo']}
-                        />
+                        <Link to="/" aria-label="Home">
+                            <img
+                                src="/favi2.png"
+                                alt="Oden Ewa Foundation"
+                                className={styles['footer-logo']}
+                                aria-hidden="true"
+                            />
+                        </Link>
                         <p className={footerStyles['footer-text']}>
                             The Oden Ewa Foundation works with visionary
                             organizations to enable young people in Africa and
