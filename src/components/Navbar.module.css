@@ -13,13 +13,13 @@
 }
 
 .logo {
-    margin-left: 1rem;
+    margin-left: 0.8rem;
     display: flex;
     align-items: flex-start;
 }
 
 .logo img {
-    height: 60px;
+    height: 70px;
     width: auto;
     transition: transform 0.3s ease;
 }

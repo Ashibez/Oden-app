@@ -18,7 +18,7 @@ function Navbar() {
             <nav className={styles.nav}>
                 <div className={styles.logo}>
                     <Link to="/" aria-label="Home">
-                        <img src="/favi1.png" alt="" aria-hidden="true" />
+                        <img src="/favi3.png" alt="" aria-hidden="true" />
                     </Link>
                 </div>
                 <Link
