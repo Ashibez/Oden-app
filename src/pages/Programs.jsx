@@ -91,11 +91,13 @@ function Programs() {
             <footer className={footerStyles.footer}>
                 <div className={footerStyles['footer-content']}>
                     <div className={footerStyles['footer-left']}>
-                        <img
-                            src="/favi2.png"
-                            alt="Oden Ewa Foundation"
-                            className={footerStyles['footer-logo']}
-                        />
+                        <Link to="/">
+                            <img
+                                src="/favi2.png"
+                                alt="Oden Ewa Foundation"
+                                className={footerStyles['footer-logo']}
+                            />
+                        </Link>
                         <p className={footerStyles['footer-text']}>
                             The Oden Ewa Foundation works with visionary
                             organizations to enable young people in Africa and
@@ -123,6 +125,12 @@ function Programs() {
                                 aria-label="Learn about Ugep Scholarships"
                             >
                                 Ugep Scholarships
+                            </Link>
+                            <Link
+                                to="/programs"
+                                aria-label="Learn about Health Insurance Scheme"
+                            >
+                                Health Insurance Scheme
                             </Link>
                         </div>
                         <div className={footerStyles['footer-column']}>

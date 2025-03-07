@@ -204,11 +204,13 @@ function Home() {
             <footer className={styles.footer}>
                 <div className={styles['footer-content']}>
                     <div className={styles['footer-left']}>
-                        <img
-                            src="/favi2.png"
-                            alt="Oden Ewa Foundation"
-                            className={styles['footer-logo']}
-                        />
+                        <Link to="/">
+                            <img
+                                src="/favi2.png"
+                                alt="Oden Ewa Foundation"
+                                className={styles['footer-logo']}
+                            />
+                        </Link>
                         <p className={styles['footer-text']}>
                             The Oden Ewa Foundation works with visionary
                             organizations to enable young people in Africa and
@@ -236,6 +238,12 @@ function Home() {
                                 aria-label="Learn about Ugep Scholarships"
                             >
                                 Ugep Scholarships
+                            </Link>
+                            <Link
+                                to="/programs"
+                                aria-label="Learn about Health Insurance Scheme"
+                            >
+                                Health Insurance Scheme
                             </Link>
                         </div>
                         <div className={styles['footer-column']}>
