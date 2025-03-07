@@ -91,14 +91,11 @@ function Programs() {
             <footer className={footerStyles.footer}>
                 <div className={footerStyles['footer-content']}>
                     <div className={footerStyles['footer-left']}>
-                        <Link to="/" aria-label="Home">
-                            <img
-                                src="/favi2.png"
-                                alt="Oden Ewa Foundation"
-                                className={styles['footer-logo']}
-                                aria-hidden="true"
-                            />
-                        </Link>
+                        <img
+                            src="/favi2.png"
+                            alt="Oden Ewa Foundation"
+                            className={footerStyles['footer-logo']}
+                        />
                         <p className={footerStyles['footer-text']}>
                             The Oden Ewa Foundation works with visionary
                             organizations to enable young people in Africa and
