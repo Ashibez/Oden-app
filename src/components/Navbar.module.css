@@ -31,7 +31,7 @@
 .navLinks {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     margin: 0;
     padding: 0;
     align-items: center;
@@ -46,7 +46,7 @@
     font-size: 1rem;
     font-weight: 500;
     transition: color 0.3s ease;
-    padding: 0.5rem 0;
+    padding: 0.2rem 0;
 }
 
 .navLinks a:hover {
@@ -111,7 +111,7 @@
     font-size: 1rem;
     font-weight: 500;
     transition: color 0.3s ease;
-    padding: 0.5rem 0;
+    padding: 0.2rem 0;
 }
 
 @media (max-width: 768px) {
