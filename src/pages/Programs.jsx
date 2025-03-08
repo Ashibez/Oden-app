@@ -68,7 +68,7 @@ function Programs() {
                         </div>
                         <div className={styles['button-container']}>
                             <Link
-                                to="https://www.odenewafoundation.org/userRegistration"
+                                to="https://https://portal.odenewafoundation.org"
                                 className={styles['apply-button']}
                                 aria-label="Apply for Health Insurance"
                             >
