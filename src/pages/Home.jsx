@@ -113,7 +113,7 @@ function Home() {
                         </div>
                         <div className={styles['button-container']}>
                             <Link
-                                to="https:/https://portal.odenewafoundation.org"
+                                to="https://portal.odenewafoundation.org"
                                 className={styles['apply-button']}
                                 aria-label="Apply for Health Insurance"
                             >
@@ -181,7 +181,7 @@ function Home() {
                         </div>
                         <div className={styles['button-container']}>
                             <Link
-                                to="https://www.https://portal.odenewafoundation.org"
+                                to="https://portal.odenewafoundation.org"
                                 className={styles['apply-button']}
                                 aria-label="Apply for scholarship"
                             >
