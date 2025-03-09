@@ -175,13 +175,13 @@ function Home() {
                             </p>
                             <p className={styles.deadline}>
                                 <span className={styles.highlight}>
-                                    Deadline: February 28th, 2025
+                                    Deadline: March 28th, 2025
                                 </span>
                             </p>
                         </div>
                         <div className={styles['button-container']}>
                             <Link
-                                to="https://portal.odenewafoundation.org"
+                                to="https://portal.odenewafoundation.org/Scholarship-Program"
                                 className={styles['apply-button']}
                                 aria-label="Apply for scholarship"
                             >
